@@ -1,0 +1,26 @@
+### Send POST request with json body
+POST http://localhost:8080/terminals
+Content-Type: application/json
+
+{
+  "serial": "101",
+  "model": "n915"
+}
+
+### GET all terminals
+GET http://localhost:8080/terminals
+
+### GET terminal by id
+GET http://localhost:8080/terminals/terminal/66ad887e8c0c9a161301292c
+
+### DELETE terminal by id
+DELETE http://localhost:8080/terminals/terminal/66aed2fb413fbf230d38783e
+
+
+### PATCH terminal by id
+PATCH http://localhost:8080/terminals/terminal/66ad8dae858b3f0b9f3b1957
+Content-Type: application/json
+
+{
+  "status": "BLOCKED"
+}
